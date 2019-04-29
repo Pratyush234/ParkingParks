@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:background="#000"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp"
+        android:background="#000">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="8dp"
+           >
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Address"
+               android:textSize="18sp"
+               android:textColor="#000"
+               android:id="@+id/address"
+               android:layout_marginTop="3dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Description"
+               android:textSize="12sp"
+               android:textColor="#000"
+               android:id="@+id/description"
+               android:layout_marginTop="3dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="No. of slots available:"
+               android:textSize="12sp"
+               android:textColor="#000"
+               android:id="@+id/slots"
+               android:layout_marginTop="3dp"
+               />
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="250dp"
+               android:id="@+id/cardImage"
+               android:layout_marginTop="5dp"
+               android:scaleType="fitXY"
+               android:background="@drawable/park"
+
+               />
+
+
+       </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

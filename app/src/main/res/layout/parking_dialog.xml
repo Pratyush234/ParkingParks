@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of slots available:"
+        android:textSize="20sp"
+        android:textColor="#000"
+        />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/slots_edit"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type here..."
+        />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textSize="20sp"
+        android:textColor="#000"
+        />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/description_edit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Type here..."
+        android:gravity="top"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/gps_button"
+            android:background="@drawable/ic_gps_fixed_black_24dp"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/gps_button"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/image_button"
+            android:background="@drawable/ic_image_black_24dp"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="25dp"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

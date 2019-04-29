@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "789467818879",
+    "firebase_url": "https://parkinglots-41d49.firebaseio.com",
+    "project_id": "parkinglots-41d49",
+    "storage_bucket": "parkinglots-41d49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789467818879:android:3d7c1315df5b9286",
+        "android_client_info": {
+          "package_name": "com.example.praty.parkingparks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789467818879-mehdpe2tdpqaqes77e28596dp9aceaaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ9UWI5oJ71DoXeByqy4xPNz-8oE3BMM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789467818879-mehdpe2tdpqaqes77e28596dp9aceaaq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
