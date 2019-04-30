@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
                         if(task.isSuccessful()){
                             mProgress.setVisibility(View.GONE);
-                            Toast.makeText(MainActivity.this, "Logic successful",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Login successful",Toast.LENGTH_SHORT).show();
                             setupSharedPreferences();
                             Log.d(TAG, "onComplete: sign in success with firebase");
 
