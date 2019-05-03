@@ -184,34 +184,28 @@ public class ParkingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //if save Button is pressed, check for valid data and push it to realtime database
-                saveData();
-                dialog.dismiss();
+                String slots=mSlots.getText().toString();
+                boolean cancel=false;
+                View focusView=null;
+
+                if(TextUtils.isEmpty(slots)){
+                    mSlots.setError("You cannot leave this field empty");
+                    focusView=mSlots;
+                    cancel=true;
+                }
+
+                if(cancel){
+                    focusView.requestFocus();
+                }
+                else {
+                    dialog.dismiss();
+                    saveDataToFirebase();
+                }
             }
         });
     }
 
 
-
-    //check if the slots field is empty or not
-    private void saveData() {
-        String slots=mSlots.getText().toString();
-        boolean cancel=false;
-
-        if(TextUtils.isEmpty(slots)){
-            Log.d(TAG, "saveData: slots empty");
-            cancel=true;
-        }
-
-        if(cancel){
-            Toast.makeText(ParkingActivity.this,"You cannot leave slots empty, please try again",
-                    Toast.LENGTH_SHORT).show();
-        }
-        else{
-            //if not empty, proceed to saving data to firebase
-            saveDataToFirebase();
-        }
-
-    }
 
     //check for google play services, if valid, check for location permissions
     //if permissions granted, get the device location
