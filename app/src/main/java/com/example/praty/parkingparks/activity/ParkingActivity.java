@@ -465,6 +465,9 @@ public class ParkingActivity extends AppCompatActivity {
         }}
     }
 
-
-
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAdapter.cleanup();
+    }
 }

@@ -117,6 +117,10 @@ public class ParkingAdapter extends RecyclerView.Adapter<ParkingAdapter.ViewHold
         return mParkingSpaces.size();
     }
 
+    public void cleanup(){
+        mRef.removeEventListener(mListener);
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView address,description,slots;
         ImageView imageView;
